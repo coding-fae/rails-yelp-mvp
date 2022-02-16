@@ -7,7 +7,6 @@ class ReviewsController < ApplicationController
 
   def create
     @review = Review.new(review_params)
-    raise
     @review.restaurant = @restaurant
     if @review.save
       redirect_to restaurant_path(@restaurant)
