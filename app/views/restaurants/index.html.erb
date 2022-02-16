@@ -1,8 +1,8 @@
-<h1>Lits of Exotic Restaurants</h1>
+<h1>‧͙⁺˚*･༓☾ Akhyra's Restaurant list☽༓･*˚⁺‧͙</h1>
 <br>
 <ul>
-<% @restaurants.each do |restaurant|%>
-<li><%= restaurant.name %></li>
-<li><%= restaurant.address %></li>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <% end %>
 </ul>
-<% end %>
