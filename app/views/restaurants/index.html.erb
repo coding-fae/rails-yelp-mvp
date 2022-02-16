@@ -1,5 +1,8 @@
 <h1>Lits of Exotic Restaurants</h1>
+<br>
+<ul>
 <% @restaurants.each do |restaurant|%>
-<h3><%= restaurant.name %></h3>
-<p><%= resturant.address %></p>
+<li><%= restaurant.name %></li>
+<li><%= restaurant.address %></li>
+</ul>
 <% end %>
