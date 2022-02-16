@@ -1,8 +1,11 @@
-<h1>‧͙⁺˚*･༓☾ Akhyra's Restaurant list☽༓･*˚⁺‧͙</h1>
+<h1 style="color:MediumSeaGreen;">‧͙⁺˚*･༓☾ Akhyra's Restaurant list☽༓･*˚⁺‧͙</h1>
+<body style="background-color:papayawhip;">
 <br>
-<ul>
+<dl>
   <% @restaurants.each do |restaurant| %>
-    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
-  <% end %>
-</ul>
-<%= link_to "Add", new_restaurant_path %>
+  <dt><%= link_to restaurant.name, restaurant_path(restaurant) %></dt>
+  <dd><%= link_to restaurant.address, restaurant_path(restaurant) %></dd>
+    <% end %>
+</dl>
+
+<button type="button"><%= link_to "Add", new_restaurant_path %></button>
