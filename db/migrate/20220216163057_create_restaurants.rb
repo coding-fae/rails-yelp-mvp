@@ -4,7 +4,7 @@ class CreateRestaurants < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :address
       t.string :phone_number
-      t.string :category %W[chinese, italian, japanese, french, belgian]
+      t.string :category
 
       t.timestamps
     end
